@@ -9,10 +9,6 @@ export interface TodoItem {
   completed: boolean;
 };
 
-export interface TodoListProps {
-  todoItems: TodoItem[];
-}
-
 export const TodoList = () => {
   const { todoItemsValue: todoItems, setTodoItemsValue } = useInputAtom();
 
